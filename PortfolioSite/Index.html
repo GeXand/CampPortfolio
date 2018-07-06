@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<title>Camp Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+</style>
+<html>
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="JIANYANG.jpg" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PROJECTS</p>
+        </a>
+        <a href="#reflections" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>REFLECTIONS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+            <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
+            <a href="#reflections" class="w3-bar-item w3-button" style="width:20% !important">REFLECTIONS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">Xander Ge</span></h1>
+            <p>Programmer and student.</p>
+            <img src="JIANYANG.jpg" alt="JIANYANG" class="w3-image" width="992" height="1108">
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">Xander</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>
+                Mediocre programmer. Plays piano almost as much as he plays melee.
+            </p>
+            <h3 class="w3-padding-16 w3-text-light-grey">Programming Skills</h3>
+            <p class="w3-wide">Stealing Code</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+            </div>
+            <p class="w3-wide">Java</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+            </div>
+            <p class="w3-wide">Full Stack Development</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="w3-padding-64 w3-content" id="projects">
+            <h2 class="w3-text-light-grey">Projects</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <h3 class="w3-text-grey">SafeNet Consulting Problem: Cash Machine</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <img src="CashMachineApp.PNG" style="width:100%" />
+            </div>
+            <a href="https://github.com/GeXand/BankAccount">Github</a>
+            <br />
+            <br />
+
+            <h3 class="w3-text-grey">Source Control: FileIO</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <img src="FileIOProgram.PNG" style="width:100%" />
+                <img src="FileIOSourceControl.PNG" style="width:100%" />
+            </div>
+            <a href="https://github.com/Estenoor/FileIO">Github</a>
+            <br />
+            <br />
+
+            <h3 class="w3-text-grey">Client Side: Unit Conversion</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <img src="ClientSideConversionCode.PNG" style="width:100%" />
+                <img src="ClientSideConversionSite.PNG" style="width:100%" />
+            </div>
+            <a href="https://github.com/Estenoor/UnitConversion">Github</a>
+            <br />
+            <br />
+
+            <h3 class="w3-text-grey">Server Side: Unit Conversion</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <img src="ServerSideConversionCode.PNG" style="width:100%" />
+                <img src="ServerSideConversionSite.PNG" style="width:100%" />
+            </div>
+            <a href="https://github.com/alenahuang/ConversionServer">Github</a>
+            <br />
+            <br />
+
+            <h3 class="w3-text-grey">Final Project: Boxes</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <img src="FinalProjectCode.PNG" style="width:100%" />
+                <p>
+                    Unfortunately, no screenshots of the final project site (even though it was pretty sick).
+                    I lost access to the databse before I could get any.
+                    Our final solution had the basic functionality of adding, editing, and deleting boxes.
+                    What made ours stand out was that it included filtering for any amount of parameters, sorting by each parameter while in the index, and searching by box ID.
+                </p>
+            </div>
+            <a href="https://github.com/sofiakhn/FinalProject">Github</a>
+        </div>
+        <!-- End Projects Section -->
+
+        <!-- Reflections Section -->
+        <div class="w3-padding-64 w3-content" id="reflections">
+            <h2 class="w3-text-light-grey">Reflections</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <h3 class="w3-text-grey">Source Control: FileIO</h3>
+            <p>
+                For this first activity focused on learning source control, we found that source control is both an incredible tool
+                that can also cause incredible problems. Eventually we got into the flow of it and everything worked at quite well.
+                The biggest thing we learned from this activity was how important communicating with the team is. This helped us best
+                designate features to work on, ensure there were no merge conflicts, resolve blocks, etc.
+            </p>
+            <h3 class="w3-text-grey">Client Side: Unit Conversion</h3>
+            <p>
+                Going to our first more coding intensive task, we expected most of the issues to be figuring out how to do things in javascript.
+                Surprisingly, we got the hang of it really quickly and found that the hardest part was actually applying our "soft skills". Individually,
+                we didn't have much problem completing our pages, but the dillema came when we found that we had poorly allocated tasks. This led to
+                really awkward blocks to resolve and messy allocation near the end of the project. Though we did get it done, we learned that
+                trello is an amazing tool we need to start using more, and that we should spend more time figuring out what needs to be coded
+                in what order, before we just start hacking away.
+            </p>
+            <h3 class="w3-text-grey">Server Side: Unit Conversion</h3>
+            <p>
+                For this project we didn't exactly learn our lesson from the last. Though we did try and spend more time organizing and actually using
+                the trello board, when time inevitably got tight we forewent organization and proper allocation for trying to code as much as possible
+                as quickly as possible. The biggest takeaway again is that hard skill (good programming) isn't all that great in the absence of soft
+                skills.
+            </p>
+            <h3 class="w3-text-grey">Final Project: Boxes</h3>
+            <p>
+                For the final project, everything really came together. We ran into significantly fewer issues concerning organization than
+                in past projects. The trello board was setup well and tasks were prioritized so no blocks ever occurred. Communication was good
+                and code issues were worked through efficiently. One thing we found extremely helpful for this final
+                project as a team was pair programming. By assigning multiple people to a feature we were able to get things done more
+                quickly and effectively. For example, we initially had quite a bit of trouble figuring out things like adding clickable
+                column headers to sort the table. Once we added more people to the job and always had a second pair of eyes on the code
+                the feature got implemented in very little time.
+            </p>
+            <h3 class="w3-text-grey">Overall</h3>
+            <p>
+                At the end of the training experience I learned a lot of valuable things I didn't expect to learn going into the "Full Stack
+                Summer Camp". This was all expedited by the fact that Full Stack Development, though something initially quite foreign, was
+                something quite comfortable to learn and get used to. Since difficult code wasn't the main issue I got to discover a lot about
+                the soft skills that a developer needs to have. Above all else was the importance of communication. Not only to figure out bugs
+                in code, but to plan out what should be prioritized and how that can be done most effectively. Though we spent more time on hard
+                skills - C#, HTML, CSS, Javascript, MVC - my biggest take away is learning how to scrum.
+            </p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Milwaukee, WI</p>
+                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 (262) 232-0009</p>
+                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: xander.q.ge@gmail.com</p>
+            </div><br>
+            <p>Lets get in touch. Send me a message:</p>
+
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            <!-- End Contact Section -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p class="w3-medium">"Powered by" <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </footer>
+        <!-- End footer -->
+    </div>
+    <!-- END PAGE CONTENT -->
+</body>
+</html>
